@@ -15,4 +15,4 @@ Open `index.html` in a browser, or serve the folder:
 Then visit http://localhost:8000.
 
 ## Status
-Static HTML only. The Compose button and app links are placeholders; no backend yet.
+Static HTML only. The prompt box and Compose button are a mock-up; no backend yet.

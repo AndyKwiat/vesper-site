@@ -24,39 +24,38 @@
       <li><a href="#traditions">Traditions</a></li>
       <li><a href="#examples">Examples</a></li>
       <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
     </ul>
   </nav>
-  <a class="btn btn-primary" href="#cta">Get the app</a>
+  <a class="btn btn-primary" href="#try">Try it now</a>
 </header>
 
 <main>
-  <section class="wrap hero">
+  <section class="wrap hero" id="try">
     <div class="hero-copy">
       <p class="eyebrow">Prayers written for the moment you are in</p>
       <h1>Say what is on your heart. We will help you find the words.</h1>
-      <p class="lede">Vesper turns a few honest sentences into a prayer you can actually pray: shaped for your tradition, your length, and the person or worry you carry today.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#cta">Download for iPhone</a>
-        <a class="btn btn-ghost" href="#examples">Read example prayers</a>
-      </div>
-      <p class="hero-note">Free to begin. No account needed for your first seven prayers.</p>
+      <p class="lede">Type a few honest sentences and Vesper will compose a prayer you can actually pray, shaped for your tradition and the person or worry you carry today.</p>
     </div>
 
-    <div class="demo" aria-label="Example of a prompt and the prayer Vesper composed">
-      <div class="prompt">
-        <label for="prompt-text">Your prompt</label>
-        <textarea id="prompt-text" rows="2" readonly>My sister starts chemo tomorrow morning. I want to pray for her courage, and for the nurses.</textarea>
+    <div class="demo" aria-label="Write a prompt and Vesper composes a prayer">
+      <form class="prompt" onsubmit="return false">
+        <label for="prompt-text">What would you like to pray for?</label>
+        <textarea id="prompt-text" rows="3" placeholder="For example: My sister starts chemo tomorrow morning. I want to pray for her courage, and for the nurses.">My sister starts chemo tomorrow morning. I want to pray for her courage, and for the nurses.</textarea>
         <div class="prompt-row">
-          <div class="chips" aria-label="Options">
-            <span class="chip on">Christian</span>
-            <span class="chip">Jewish</span>
-            <span class="chip">Muslim</span>
-            <span class="chip">Universal</span>
-            <span class="chip on">Short</span>
+          <div class="chips" role="group" aria-label="Tradition and length">
+            <button type="button" class="chip on">Christian</button>
+            <button type="button" class="chip">Jewish</button>
+            <button type="button" class="chip">Muslim</button>
+            <button type="button" class="chip">Universal</button>
+            <span class="chip-sep" aria-hidden="true"></span>
+            <button type="button" class="chip on">Short</button>
+            <button type="button" class="chip">Longer</button>
           </div>
-          <button class="btn btn-primary" type="button" id="compose-btn">Compose</button>
+          <button class="btn btn-primary" type="submit" id="compose-btn">Compose a prayer</button>
         </div>
-      </div>
+      </form>
+      <p class="hero-note">Free to try. Nothing you write is stored unless you choose to keep it.</p>
 
       <article class="prayer">
         <div class="prayer-head">
@@ -89,7 +88,7 @@
     <div class="steps">
       <div class="step">
         <h3>Tell it plainly</h3>
-        <p>Type or speak what is happening: a diagnosis, an exam, a birth, a grudge you want to set down. You do not need religious language. Ordinary words are enough.</p>
+        <p>Type what is happening: a diagnosis, an exam, a birth, a grudge you want to set down. You do not need religious language. Ordinary words are enough.</p>
       </div>
       <div class="step">
         <h3>Choose the shape</h3>
@@ -97,7 +96,7 @@
       </div>
       <div class="step">
         <h3>Pray it, keep it</h3>
-        <p>Read it aloud, edit a line, or ask for a gentler version. Save it to your book, set a reminder for the same hour tomorrow, or send it to the person you prayed for.</p>
+        <p>Read it aloud, edit a line, or ask for a gentler version. Save it to your prayer book, or send it to the person you prayed for.</p>
       </div>
     </div>
   </section>
@@ -132,14 +131,6 @@
     </div>
   </section>
 
-  <section class="wrap">
-    <div class="hours" aria-label="Times of day for prayer reminders">
-      <div class="hour"><span class="n">Morning</span><span class="t">Lauds · 6:30</span><span class="d">A prayer to begin the day with</span></div>
-      <div class="hour"><span class="n">Midday</span><span class="t">Sext · 12:00</span><span class="d">A pause in the middle of work</span></div>
-      <div class="hour"><span class="n">Evening</span><span class="t">Vespers · 6:30</span><span class="d">Thanks for what the day held</span></div>
-      <div class="hour"><span class="n">Night</span><span class="t">Compline · 9:30</span><span class="d">Setting the day down to sleep</span></div>
-    </div>
-  </section>
 
   <section class="wrap section" id="examples">
     <div class="section-head">
@@ -177,35 +168,27 @@
         <h3>Your prayer book</h3>
         <p>Every prayer you keep goes into a private book, ordered by date and by the people you prayed for. Return to a prayer, or see how one has changed over months.</p>
       </div>
-      <div class="feature">
-        <h3>Speak it, hear it</h3>
-        <p>Dictate your prompt hands-free, and have any prayer read back to you in a calm voice, useful at bedside and at bedtime.</p>
-      </div>
-      <div class="feature">
+            <div class="feature">
         <h3>Prayer requests from others</h3>
-        <p>Friends can send you a request with a link. You pray, and they receive the prayer with a note that you did.</p>
+        <p>Anyone can send you a request with a link. You pray, and they receive the prayer with a note that you did.</p>
       </div>
       <div class="feature">
         <h3>Private by default</h3>
-        <p>What you write stays on your device unless you choose to share it. Prompts are never used to train anything.</p>
+        <p>What you write is not stored unless you choose to keep it. Prompts are never used to train anything.</p>
       </div>
-      <div class="feature">
-        <h3>Reminders by the hour</h3>
-        <p>Set reminders on the traditional hours or your own. A gentle notification, never a streak counter.</p>
-      </div>
-      <div class="feature">
+            <div class="feature">
         <h3>Edit any line</h3>
         <p>A prayer is only yours once it sounds like you. Tap a sentence to rewrite it softer, shorter, or in the second person.</p>
       </div>
     </div>
   </section>
 
-  <section class="wrap section" id="cta">
+  <section class="wrap section" id="about">
     <div class="cta">
-      <p class="eyebrow">Get Vesper</p>
+      <p class="eyebrow">About Vesper</p>
       <h2>Begin with the thing you cannot stop thinking about.</h2>
-      <p>Available for iPhone and Android. Your first seven prayers are free, and the prayer book is yours to keep.</p>
-      <a class="btn btn-primary" href="#">Download the app</a>
+      <p>Vesper runs in your browser. There is nothing to install and no account to make. Write a prompt at the top of this page and see what comes back.</p>
+      <a class="btn btn-primary" href="#try">Write a prayer</a>
     </div>
   </section>
 </main>

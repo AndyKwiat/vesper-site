@@ -104,34 +104,39 @@ p { margin: 0; }
 
 /* Hero */
 .hero {
-  display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center;
-  padding-block: 56px 88px;
+  display: grid; gap: 40px; justify-items: center; text-align: center;
+  padding-block: 40px 88px;
 }
-.hero-copy { display: grid; gap: 26px; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.hero-note { font-size: 0.9rem; color: var(--ink-3); }
-@media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 40px; padding-block: 32px 64px; } }
+.hero-copy { display: grid; gap: 20px; justify-items: center; max-width: 44em; }
+.hero-note { font-size: 0.9rem; color: var(--ink-3); text-align: center; }
+@media (max-width: 860px) { .hero { gap: 28px; padding-block: 24px 64px; } }
 
 /* Demo: prompt + composed prayer */
-.demo { display: grid; gap: 14px; position: relative; }
+.demo { display: grid; gap: 14px; position: relative; width: min(760px, 100%); text-align: left; }
 .prompt {
-  background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
-  padding: 16px 18px; display: grid; gap: 12px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+  padding: 20px 22px; display: grid; gap: 12px; margin: 0;
+  box-shadow: 0 1px 0 rgba(35,32,58,0.04), 0 12px 32px -20px rgba(35,32,58,0.3);
 }
+.prompt:focus-within { border-color: var(--gold); }
 .prompt label { font-size: 0.8rem; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
 .prompt textarea {
   width: 100%; border: 0; background: transparent; resize: none; font: inherit; color: var(--ink);
-  font-size: 1.05rem; line-height: 1.5; padding: 0; min-height: 3.2em;
+  font-size: 1.15rem; line-height: 1.5; padding: 0; min-height: 4.4em; outline: none;
 }
+.prompt textarea::placeholder { color: var(--ink-3); }
 .prompt-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
-  font-size: 0.8rem; padding: 5px 11px; border-radius: 999px;
+  font-size: 0.8rem; padding: 5px 11px; border-radius: 999px; font-family: inherit; cursor: pointer;
   border: 1px solid var(--line); color: var(--ink-2); background: transparent;
 }
+.chip:hover { border-color: var(--ink-3); }
 .chip.on { background: var(--gold-soft); border-color: transparent; color: var(--ink); }
+.chip-sep { width: 1px; background: var(--line); margin-inline: 4px; align-self: stretch; }
 
 .prayer {
+  margin-top: 12px;
   background: var(--paper); border-radius: 18px; padding: 34px 36px 30px;
   box-shadow: var(--shadow); position: relative; overflow: hidden;
   border-top: 3px solid var(--gold);
@@ -195,15 +200,6 @@ p { margin: 0; }
 }
 .card .tag { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
 @media (max-width: 860px) { .gallery { grid-template-columns: 1fr; } }
-
-/* Hours strip */
-.hours { display: grid; grid-template-columns: repeat(4, 1fr); border-block: 1px solid var(--line); }
-.hour { padding: 22px 18px; display: grid; gap: 4px; border-left: 1px solid var(--line); }
-.hour:first-child { border-left: 0; }
-.hour .t { font-family: "Fraunces", Georgia, serif; font-size: 1.3rem; }
-.hour .n { font-size: 0.8rem; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; }
-.hour .d { font-size: 0.92rem; color: var(--ink-2); }
-@media (max-width: 760px) { .hours { grid-template-columns: repeat(2, 1fr); } .hour:nth-child(3) { border-left: 0; } }
 
 /* Feature list */
 .features { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 48px; }
