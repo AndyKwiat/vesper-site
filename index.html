@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vesper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap nav">
+  <a class="brand" href="#" aria-label="Vesper home">
+    <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
+      <path d="M13 2c1.6 3.4 4 5.2 4 8.4A4 4 0 0 1 9 10.4C9 7.2 11.4 5.4 13 2Z" fill="var(--gold)"/>
+      <rect x="11.2" y="14" width="3.6" height="9" rx="1.2" fill="var(--ink)"/>
+    </svg>
+    Vesper
+  </a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#traditions">Traditions</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#features">Features</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-primary" href="#cta">Get the app</a>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Prayers written for the moment you are in</p>
+      <h1>Say what is on your heart. We will help you find the words.</h1>
+      <p class="lede">Vesper turns a few honest sentences into a prayer you can actually pray: shaped for your tradition, your length, and the person or worry you carry today.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#cta">Download for iPhone</a>
+        <a class="btn btn-ghost" href="#examples">Read example prayers</a>
+      </div>
+      <p class="hero-note">Free to begin. No account needed for your first seven prayers.</p>
+    </div>
+
+    <div class="demo" aria-label="Example of a prompt and the prayer Vesper composed">
+      <div class="prompt">
+        <label for="prompt-text">Your prompt</label>
+        <textarea id="prompt-text" rows="2" readonly>My sister starts chemo tomorrow morning. I want to pray for her courage, and for the nurses.</textarea>
+        <div class="prompt-row">
+          <div class="chips" aria-label="Options">
+            <span class="chip on">Christian</span>
+            <span class="chip">Jewish</span>
+            <span class="chip">Muslim</span>
+            <span class="chip">Universal</span>
+            <span class="chip on">Short</span>
+          </div>
+          <button class="btn btn-primary" type="button" id="compose-btn">Compose</button>
+        </div>
+      </div>
+
+      <article class="prayer">
+        <div class="prayer-head">
+          <span class="title">For my sister, before treatment</span>
+          <span class="meta">Petition · 86 words</span>
+        </div>
+        <div class="prayer-body">
+          <p>Gracious God, be with Anna tonight, while the house is quiet and tomorrow feels near.</p>
+          <p>Give her courage that does not need to feel brave. Let her rest, and let her wake knowing she is not walking in alone.</p>
+          <p>Bless the nurses who will greet her in the morning: steady their hands, warm their voices, and let their care be a sign of yours.</p>
+          <p>Hold all of us who love her. Teach us to wait with hope.</p>
+          <p class="amen">Amen.</p>
+        </div>
+        <div class="prayer-actions">
+          <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 13.5 2.5 8a3 3 0 0 1 4.2-4.3L8 5l1.3-1.3A3 3 0 0 1 13.5 8Z"/></svg>Keep</span>
+          <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h8M9 4l4 4-4 4"/></svg>Share</span>
+          <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8a5 5 0 0 1 8.5-3.5L13 6M13 3v3h-3M13 8a5 5 0 0 1-8.5 3.5L3 10M3 13v-3h3"/></svg>Rewrite</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="divider"></div>
+
+  <section class="wrap section" id="how">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Three quiet steps between a worry and a prayer.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Tell it plainly</h3>
+        <p>Type or speak what is happening: a diagnosis, an exam, a birth, a grudge you want to set down. You do not need religious language. Ordinary words are enough.</p>
+      </div>
+      <div class="step">
+        <h3>Choose the shape</h3>
+        <p>Pick a tradition and a length. Vesper follows the classic form of a prayer: an address, thanks or confession, the request itself, and a closing.</p>
+      </div>
+      <div class="step">
+        <h3>Pray it, keep it</h3>
+        <p>Read it aloud, edit a line, or ask for a gentler version. Save it to your book, set a reminder for the same hour tomorrow, or send it to the person you prayed for.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="traditions">
+    <div class="section-head">
+      <p class="eyebrow">Traditions</p>
+      <h2>Written in the voice of your own tradition, not a generic one.</h2>
+      <p class="lede">Each tradition has its own forms, names for God, and closing words. Vesper learns the conventions so the prayer sounds like it belongs in your home.</p>
+    </div>
+    <div class="traditions">
+      <div class="tradition">
+        <span class="form">Collect · Litany · Intercession</span>
+        <h3>Christian</h3>
+        <p>Catholic, Orthodox, and Protestant voices, with optional scripture echoes from the Psalms and Gospels.</p>
+      </div>
+      <div class="tradition">
+        <span class="form">Berakhah · Mi Sheberach · Kavanah</span>
+        <h3>Jewish</h3>
+        <p>Blessings that open with Barukh atah, prayers for healing by Hebrew name, and kavanot to set intention before a mitzvah.</p>
+      </div>
+      <div class="tradition">
+        <span class="form">Du'a · Dhikr</span>
+        <h3>Muslim</h3>
+        <p>Personal du'a opening with praise and salawat, closing with Ameen, written in English with the Arabic phrases you already use.</p>
+      </div>
+      <div class="tradition">
+        <span class="form">Blessing · Meditation · Intention</span>
+        <h3>Universal</h3>
+        <p>For the spiritual but unaffiliated, the searching, and shared moments across faiths: gratitude, intention, and quiet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="hours" aria-label="Times of day for prayer reminders">
+      <div class="hour"><span class="n">Morning</span><span class="t">Lauds · 6:30</span><span class="d">A prayer to begin the day with</span></div>
+      <div class="hour"><span class="n">Midday</span><span class="t">Sext · 12:00</span><span class="d">A pause in the middle of work</span></div>
+      <div class="hour"><span class="n">Evening</span><span class="t">Vespers · 6:30</span><span class="d">Thanks for what the day held</span></div>
+      <div class="hour"><span class="n">Night</span><span class="t">Compline · 9:30</span><span class="d">Setting the day down to sleep</span></div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="examples">
+    <div class="section-head">
+      <p class="eyebrow">Examples</p>
+      <h2>Real prompts, and the prayers they became.</h2>
+    </div>
+    <div class="gallery">
+      <article class="card">
+        <span class="tag">Gratitude · Universal</span>
+        <p class="ask"><b>Prompt:</b> First night in our new apartment, boxes everywhere, and I am unreasonably happy.</p>
+        <blockquote>For walls that are ours and a door that locks, for the friends who carried the couch up three flights, for a kitchen we have not yet cooked in: thank you. Let this place become a home slowly, and let everyone who enters it feel welcome.</blockquote>
+      </article>
+      <article class="card">
+        <span class="tag">Healing · Jewish</span>
+        <p class="ask"><b>Prompt:</b> A Mi Sheberach for my grandfather, Yaakov ben Sarah, recovering from a fall.</p>
+        <blockquote>May the One who blessed our ancestors bless and heal Yaakov ben Sarah. May the Holy One be filled with compassion for him, restore his strength, and grant him a complete healing, a healing of body and a healing of spirit, speedily and soon. And let us say: Amen.</blockquote>
+      </article>
+      <article class="card">
+        <span class="tag">Guidance · Muslim</span>
+        <p class="ask"><b>Prompt:</b> Deciding whether to take a job in another city. I want clarity, not just comfort.</p>
+        <blockquote>Alhamdulillah for the choice itself. Ya Allah, You know what is good for me and I do not. If this move is good for my faith, my family, and my future, make it easy and bless it. If it is not, turn it away from me and turn me away from it, and make me content with what You choose. Ameen.</blockquote>
+      </article>
+    </div>
+  </section>
+
+  <div class="wrap"><hr class="divider"></div>
+
+  <section class="wrap section" id="features">
+    <div class="section-head">
+      <p class="eyebrow">Features</p>
+      <h2>Small, careful, and yours.</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <h3>Your prayer book</h3>
+        <p>Every prayer you keep goes into a private book, ordered by date and by the people you prayed for. Return to a prayer, or see how one has changed over months.</p>
+      </div>
+      <div class="feature">
+        <h3>Speak it, hear it</h3>
+        <p>Dictate your prompt hands-free, and have any prayer read back to you in a calm voice, useful at bedside and at bedtime.</p>
+      </div>
+      <div class="feature">
+        <h3>Prayer requests from others</h3>
+        <p>Friends can send you a request with a link. You pray, and they receive the prayer with a note that you did.</p>
+      </div>
+      <div class="feature">
+        <h3>Private by default</h3>
+        <p>What you write stays on your device unless you choose to share it. Prompts are never used to train anything.</p>
+      </div>
+      <div class="feature">
+        <h3>Reminders by the hour</h3>
+        <p>Set reminders on the traditional hours or your own. A gentle notification, never a streak counter.</p>
+      </div>
+      <div class="feature">
+        <h3>Edit any line</h3>
+        <p>A prayer is only yours once it sounds like you. Tap a sentence to rewrite it softer, shorter, or in the second person.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="cta">
+    <div class="cta">
+      <p class="eyebrow">Get Vesper</p>
+      <h2>Begin with the thing you cannot stop thinking about.</h2>
+      <p>Available for iPhone and Android. Your first seven prayers are free, and the prayer book is yours to keep.</p>
+      <a class="btn btn-primary" href="#">Download the app</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Vesper. Made with care, for people who pray.</span>
+  <ul>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
